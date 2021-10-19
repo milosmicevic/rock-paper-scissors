@@ -16,7 +16,7 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  height: 100vh;
+  height: 95vh;
 }
 
 #container h1 {
@@ -112,6 +112,19 @@ body {
 
 #container .dialog-container .dialog-box .restart-button:hover {
   transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4c5c68;
+  margin-left: 0.3rem;
 }
 
 @media only screen and (max-width: 1100px) {
