@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c5c3c6;
+  color: #4c5c68;
+  font-family: "Gill Sans", sans-serif;
+  user-select: none;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+#container h1 {
+  color: #46494c;
+  margin-top: 1.5rem;
+}
+#container .options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin: 3rem 0 1.5rem;
+}
+
+#container .options-container .option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #dcdcdd;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+#container .options-container .option:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-out;
+  border: 2px solid #eac43a;
+}
+
+#container .message {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+#container .score-container {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  font-size: 1.3rem;
+}
+
+#container .score-container .score-icon {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#container .score-container .score-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#container .dialog-container {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#container .dialog-container .dialog-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 40%;
+  height: 14rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  left: 30%;
+  top: 15%;
+}
+
+#container .dialog-container .dialog-box .result-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#container .dialog-container .dialog-box .restart-button {
+  background-color: #eac43a;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#container .dialog-container .dialog-box .restart-button:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1100px) {
+  #container .score-container {
+    width: 70%;
+  }
+  #container .dialog-container .dialog-box {
+    width: 70%;
+    left: 15%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #container .options-container {
+    gap: 1.5rem;
+  }
+  #container .options-container .option {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  #container .score-container {
+    width: 80%;
+  }
+  #container .dialog-container .dialog-box {
+    width: 80%;
+    font-size: 1rem;
+    left: 10%;
+  }
+
+  #container .dialog-container .dialog-box .result-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #container .options-container {
+    gap: 1rem;
+  }
+  #container .options-container .option {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  #container .score-container {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  #container .score-container .score-number {
+    font-size: 1.4rem;
+  }
+}
