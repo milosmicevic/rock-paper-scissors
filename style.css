@@ -25,7 +25,6 @@ body {
 }
 #container .options-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 3rem;
   margin: 3rem 0 1.5rem;
@@ -35,7 +34,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   background-color: #dcdcdd;
   width: 11rem;
   height: 11rem;
@@ -162,7 +160,7 @@ footer a {
 
 @media only screen and (max-width: 400px) {
   #container .options-container {
-    gap: 1rem;
+    gap: 0.6rem;
   }
   #container .options-container .option {
     width: 6rem;
