@@ -158,7 +158,7 @@ footer a {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   #container .options-container {
     gap: 0.6rem;
   }
